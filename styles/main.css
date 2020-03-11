@@ -7,68 +7,356 @@ body{
 
 }
 
-
 /*Inicio de mi encabezado*/
-
-h1{
-
-    font-size: 1e;
-    margin:10.7px 0;
+.header{
+    margin: 4rem 0;
 }
 
 
+.header_imgwiki{
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 ;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.header_logo {
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0 20px;
+   
+}
+
+.header_logo .slogan{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0,5rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+.conteiner{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 500px;
+}
+.container_img{
+     display: flex;
+     text-align: center;
+     justify-content: center;
+     border-radius: 100%;
+     padding-top: 70px;
+
+}
+
+.content_idiomas{
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+
+a{
+    padding-top: 10px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: transparent;
+    color: gray; 
+    font-weight: normal; 
+    font-size: small;
+    text-align: center;  
+}
+
+
+ .button_es{
+    justify-content: left;
+    background-color: transparent;   
+    border-bottom: none;
+    border-top: none ;
+    border-right: none ;
+    border-left: none ;
+    color: blue;
+    font-weight: bold; 
+    font-size: 14px; 
+    position: relative;
+    bottom: 250px;
+    left: 350px;
+
+}
+
+.button_es:hover{
+    text-decoration: underline blue;
+}
+
+
+.button_en{
+    justify-content: right;
+    background-color: transparent ;   
+    border-bottom: none ;
+    border-top: none ;
+    border-right: none ;
+    border-left: none ;
+    color: blue;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    bottom: 250px;
+    left: 550px;
+}
+
+.button_en:hover{
+    text-decoration: underline blue;
+}
+
+.button_ja{
+    justify-content: left;
+    background-color: transparent ;   
+    border-bottom: none ;
+    border-top: none ;
+    border-right: none ;
+    border-left: none ;
+    color: blue;
+    font-weight: bold;
+    font-size: 14px; 
+    position: relative;
+    bottom: 180px;
+    left: 50px;
+}
+
+.button_ja:hover{
+    text-decoration: underline blue;
+}
+
+.button_de{
+    justify-content: right;
+    background-color: transparent ;   
+    border-bottom: none ;
+    border-top: none ;
+    border-right: none ;
+    border-left: none ;
+    color: blue;
+    font-weight: bold;
+    font-size: 14px; 
+    position: relative;
+    bottom: 180px;
+    left: 380px; 
+}
+
+.button_de:hover{
+    text-decoration: underline blue;
+}
+
+
+.button_ru{
+    justify-content: left;
+    background-color: transparent ;   
+    border-bottom: none ;
+    border-top: none ;
+    border-right: none ;
+    border-left: none ;
+    color: blue;
+    font-weight: bold; 
+    font-size: 14px; 
+    position: relative;
+    bottom: 110px;
+    left: -195px; 
+}
+
+.button_ru:hover{
+    text-decoration: underline blue;
+}
+
+.button_fr{
+    justify-content: right;
+    background-color: transparent ;   
+    border-bottom: none ;
+    border-top: none ;
+    border-right: none ;
+    border-left: none ;
+    color: blue;
+    font-weight: bold; 
+    font-size: 14px; 
+    position: relative;
+    bottom: 110px;
+    left: 155px; 
+}
+
+.button_fr:hover{
+    text-decoration: underline blue;
+}
+
+.button_it{
+    justify-content: left;
+    background-color: transparent ;   
+    border-bottom: none ;
+    border-top: none ;
+    border-right: none ;
+    border-left: none ;
+    color: blue;
+    font-weight: bold; 
+    font-size: 14px; 
+    position: relative;
+    bottom: 40px;
+    left: -385px; 
+}
+
+.button_it:hover{
+    text-decoration: underline blue;
+}
+.button_zh{
+    justify-content: right;
+    background-color: transparent ;   
+    border-bottom: none ;
+    border-top: none ;
+    border-right: none ;
+    border-left: none ;
+    color: blue;
+    font-weight: bold; 
+    font-size: 14px; 
+    position: relative;
+    bottom: 40px;
+    left: -95px;  
+}
+
+.button_zh:hover{
+    text-decoration: underline blue;
+}
+.button_pt{
+    justify-content: left;
+    background-color: transparent ;   
+    border-bottom: none ;
+    border-top: none ;
+    border-right: none ;
+    border-left: none ;
+    color: blue;
+    font-weight: bold;
+    font-size: 14px; 
+    position: relative;
+    bottom: -30px;
+    left: -540px;  
+}
+
+.button_pt:hover{
+    text-decoration: underline blue;
+}
+
+.button_pl{
+    justify-content: right;
+    background-color: transparent ;   
+    border-bottom: none ;
+    border-top: none ;
+    border-right: none ;
+    border-left: none ;
+    color: blue;
+    font-weight: bold; 
+    font-size: 14px; 
+    position: relative;
+    bottom: -30px;
+    left: -400px; 
+}
+.button_pl:hover{
+    text-decoration: underline blue;
+}
+
+main {
+    margin-top: 150px;
+    text-align: center;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+}
+
+main .main-input-container{
+    width: 525px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: gray;
+}
+
+main .main-input-container:hover{
+    border-color: blue; 
+}
+
+main .main-input input{
+    width: 450px;
+    height: 40px;
+    margin-left: 10px;
+    border: none;
     
-    body{margin:0}
-    article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
-    audio,canvas,progress,video{display:inline-block;
-                               vertical-align:baseline}
-    audio:not([controls]){display:none;
-                      height:0}[hidden],
-    template{display:none}
-    a{background-color:transparent}
-    a:active,a:hover{outline:0}
-    abbr[title]{border-bottom:1px dotted}
-    b,strong{font-weight:700}
-    dfn{font-style:italic}
+}
+
+main .main-input .lang-icon{
+    background-position: right;
+    text-align: right;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+main .main-input .desp-icon{
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDov%0D%0AL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAg%0D%0AMTAgNiI+Cgk8dGl0bGU+CgkJYXJyb3cgZG93bgoJPC90aXRsZT4KCTxwYXRoIGZpbGw9Im5vbmUi%0D%0AIHN0cm9rZT0iIzUwNTM1NiIgc3Ryb2tlLXdpZHRoPSIxLjExIiBkPSJNLjU2LjU1TDUgNC45IDku%0D%0ANDQuNTQiLz4KPC9zdmc+Cg==);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+
+main .main-input .search-icon{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS4KYDyAo9JH0TCwXGCxJpjqxKH9mmrj2DXO65JPpKv1xkwU5hw);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
     
-    mark{background:#fc3;
-        color:#000}
-    small{font-size:12px;
-        font-size:1.2rem}
-    sub,sup{font-size:75%;
-        line-height:0;
-        position:relative;
-        vertical-align:baseline}
-    sup{top:-.5em}
-    sub{bottom:-.25em}
-    img{border:0}
-    svg:not(:root){overflow:hidden}
-    figure{margin:16px 40px;
-        margin:1.6rem 4rem}
-    hr{-webkit-box-sizing:content-box;
-        -moz-box-sizing:content-box;
-        box-sizing:content-box;
-        height:0}
-    pre{overflow:auto}
-    code,kbd,pre,samp{font-family:monospace,monospace;
-        font-size:14px;
-        font-size:1.4rem}
-        button,input,optgroup,select,textarea{color:inherit;
-                                        font:inherit;
-                                        margin:0}
-button{overflow:visible}
-button,select{text-transform:none}
-button,html input[type=button],
-input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
-button[disabled],html input[disabled]{cursor:default}
-button::-moz-focus-inner,input::-moz-focus-inner{border:0;
-     padding:0}
-input{line-height:normal}
-input[type=checkbox],input[type=radio]{-webkit-box-sizing:border-box;
-                                      -moz-box-sizing:border-box;
-                                       box-sizing:border-box;
-                                       padding:0}
-input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}
-input[type=search]{-webkit-appearance:none;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}input[type=search]:focus{outline-offset:-2px}fieldset{border:1px solid silver;margin:0 2px;margin:0 .2rem;padding:5.6px 10px 12px;padding:.56rem 1rem 1.2rem}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}.hidden,[hidden]{display:none!important}.screen-reader-text{display:block;position:absolute!important;clip:rect(1px,1px,1px,1px);width:1px;height:1px;margin:-1px;border:0;padding:0;overflow:hidden}body{background-color:#fff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-size:1.4rem;line-height:1.5;margin:4px 0;margin:.4rem 0}a{-ms-touch-action:manipulation;touch-action:manipulation}a,a:active,a:focus{unicode-bidi:embed;outline:0;color:#36c;text-decoration:none}a:focus{outline:1px solid #36c}a:hover{text-decoration:underline}img{border:0;vertical-align:middle}hr{clear:both;height:0;border:0;border-bottom:1px solid #c8ccd1;margin:2.6px 13px;margin:.26rem 1.3rem}
+}
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+    
+}
+
+main .main-buttons div {
+    display: inline-block;
+}
+
+main .main-buttons button {
+    height: 36px;
+    background-color: #f2f2f2;
+    text-align: center;
+    border: none;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+main .main-buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    color: #222;
+}
+
+
 
 

@@ -4,22 +4,88 @@
 <html lang="en" lang="es" class="js-enabled" dir="ltr">   
    <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Wikipedia</title>
         <link rel="stylesheet" href="styles/main.css">
    </head>
 
    <body>
-    <h1 class="central-textlogo"  title="Wikipedia">
-        <img class="central-featured-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTq0-34KCPCMGXh3Rg5gSynxfnXHllCk-JB5Fs1671HWT9BD0Es" srcset="portal/wikipedia.org/assets/img/Wikipedia-logo-v2@1.5x.png 1.5x, portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png 2x" width="200" height="183" alt="Wikipedia">
-        <div class="central-textlogo-wrapper">
-        <div class="central-textlogo__image sprite svg-Wikipedia_wordmark">
-        Wikipedia
+    <header class="header">
+        <div class="header_imgwiki">
+           <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDov%0D%0AL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzQiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAg%0D%0AMCA1MDAgODUiPgoJPHRpdGxlPgoJCVdpa2lwZWRpYSB3b3JkbWFyawoJPC90aXRsZT4KCTxwYXRo%0D%0AIGQ9Ik01NS4yNyAyMi4wN0w1My4zIDE4LjFjLTMuMzMtNi42Mi0zLjI2LTYuOTctNi42My03LjQt%0D%0ALjk0LS4xNC0xLjQzLS4yNi0xLjQzLS43MnYtMi4xbC4yOC0uMmgxOS42NWwuNTIuMTZ2Mi4xYzAg%0D%0ALjQ2LS4zNS43LTEuMDQuN2wtMS40My4yYy0zLjYuMy0zIDEuNzYtLjYyIDYuNTNsMjIuNzIgNDYu%0D%0ANDYuNzguMiAyMC4xNi00Ny44M2MuNy0xLjkzLjYtMy4zLS4zLTQuMS0uOS0uOC0xLjU1LTEuMjUt%0D%0AMy45LTEuMzVsLTEuODgtLjFjLS4yMyAwLS40NS0uMDgtLjY2LS4yM2EuNzIuNzIgMCAwIDEtLjMy%0D%0ALS41OHYtMmwuMy0uMmgyMi43N2wuMjMuMnYyYzAgLjU0LS4zLjgtLjkyLjgtMi45OC4xNC01LjIu%0D%0AOC02LjYzIDEuOTRhMTEuNDMgMTEuNDMgMCAwIDAtMy4zNiA0Ljg2cy0xOC41NSA0Mi40My0yNC45%0D%0AIDU2LjU0Yy0yLjQyIDQuNjItNC44IDQuMi02LjktLjE0Qzc1LjM1IDY0LjcgNjIuODYgMzcgNjIu%0D%0AODYgMzdsLTcuNi0xNC45M3oiLz4KCTxwYXRoIGQ9Ik05MS42NiA3LjY1cy0xMi44LS4wNC0xOC41%0D%0AMiAwbC0uMjguMnYyYzAgLjIzLjEuNDIuMy41Ny4yMi4xNi40NC4yNC42Ny4yNGwuOTIuMWMyLjMz%0D%0ALjEgMy40LjcgMy43MiAxLjEuNTYuNjcuODMgMS40LS41MiA0LjM0TDU0LjAzIDYzLjlsLS42Mi0u%0D%0AMTVzLTE3LjEzLTM2LjEzLTIyLjEtNDguMmE4LjU5IDguNTkgMCAwIDEtLjczLTIuNzZjMC0xLjI0%0D%0AIDEuMS0xLjkgMy4zMi0ybDIuNTctLjFjLjcgMCAxLjA0LS4yNyAxLjA0LS44MlY3LjlsLS4yMy0u%0D%0AMnMtMjAuNTItLjAzLTI0Ljc2IDBsLS4yMi4ydjIuMDhjMCAuMzguNDguNiAxLjQzLjcyIDIuNjIu%0D%0AMTQgNC4zMy41NSA1LjE1IDEuMjQuODIuNyAxLjcgMi40NyAyLjg0IDUuMjMgNi4yMiAxNC45NiAx%0D%0AOS40NSA0MS42NSAyNS45IDU2Ljg2IDEuODUgNC4xNSA0LjIgNC44IDcuMDItLjEzIDQuOS05LjEg%0D%0AMTguMi0zNi44NyAxOC4yLTM2Ljg3bDEwLjQ3LTE5LjZjMS4yLTIuMDUgMi40LTMuOSAyLjk4LTQu%0D%0ANzYgMS4xLTEuNTcgMS43LTEuODcgNC43LTIgLjYgMCAuOS0uMjguOS0uODNWNy44NmwtLjIyLS4y%0D%0Aem0zOC45NCA2MS45M2MwIDIuMyAxLjA1IDMuNjQgNC4zOCAzLjk1bDIuMi4yYy4zIDAgLjYuMjIu%0D%0ANi42M3YyLjJsLS4xLjJzLTcuOS0uMi0xMS4xMi0uMmMtMi45IDAtMTEuMDMuMi0xMS4wMy4ybC0u%0D%0AMi0uMnYtMi4yYzAtLjQuMy0uNjIuNzItLjYybDIuMDgtLjJjMy40NC0uMzIgNC40OC0xLjk4IDQu%0D%0ANDgtMy45NlYzNC45NWMwLTIuMy0xLjI1LTIuOTItNC40Ny0zLjIybC0yLjA4LS4yMmMtLjQgMC0u%0D%0ANzItLjA4LS43Mi0uNHYtMi40bC4xLS4yczguMjIuMiAxMS40NC4yYTcyNiA3MjYgMCAwIDAgMTAu%0D%0AODItLjJsLjEuMlYzMWMwIC4zLS4yMi41LS42My41bC0yLjIuMjJjLTMuMi4zLTQuMzYgMS4xNC00%0D%0ALjM2IDMuMjN2MzQuNjN6bTMwLjcgMGMwIDIuMyAxLjM2IDMuNDMgNC4zNyAzLjk1bDEuMTUuMmMu%0D%0AMy4xLjYyLjIyLjYyLjYzdjIuMmwtLjEuMnMtNi41NS0uMi05LjY3LS4yYy0yLjkyIDAtMTEuNDQu%0D%0AMi0xMS40NC4ybC0uMi0uMnYtMi4yYzAtLjQuMy0uNjIuNzItLjYybDIuMDgtLjJjMy4xMi0uMzIg%0D%0ANC40Ny0xLjk4IDQuNDctMy45NlYzNC45NWMwLTIuMy0xLjE1LTIuOTItNC40Ny0zLjIybC0yLjA4%0D%0ALS4yMmMtLjQyIDAtLjczLS4wOC0uNzMtLjR2LTIuNGwuMS0uMnM4LjUzLjIgMTEuNzUuMmMyLjky%0D%0AIDAgOS40Ny0uMiA5LjQ3LS4ybC4xLjJWMzFjMCAuMy0uMi40LS42Mi41bC0xLjE1LjIyYy0zLjIy%0D%0ALjYyLTQuMzYgMS4xNC00LjM2IDMuMjN2MTUuN2MzLjQ0IDAgNS40LTEuNzYgMTAtNi42NSA0LjE1%0D%0ALTQuNTggNy4zNy04LjQyIDcuMzctMTAuNCAwLS44NC0uOTMtMS43Ny0zLTIuMS0uNDMtLjEtLjY0%0D%0ALS4yLS42NC0uNXYtMi40bC4xLS4xczguNDMuMiAxMS40NS4yYzIuNyAwIDcuMjgtLjIgNy4yOC0u%0D%0AMmwuMy4xVjMxYzAgLjMtLjMuNS0uODIuNS00LjA2LjMyLTYuODcuNTMtMTAuNiA0LjhsLTguOTUg%0D%0AMTAuM2MtMS43OCAxLjg2LTIuNCAzLTIuNCAzLjg0IDAgLjYyLjQgMS4xNC45MyAxLjc2bDE1Ljcg%0D%0AMTguOTNjMS4yNSAxLjQ1IDMuNzUgMi4wOCA1LjgzIDIuNWwuNTIuMWMuMy4xLjczLjMuNzMuNjJ2%0D%0AMi4xOGwtLjMuMXMtNS41Mi0uMS04LjQzLS4xYy0yLjYgMC02LjM0LjEtNi4zNC4xbC0uMS0uMXYt%0D%0AMS4yNWMwLTEuMzUtLjEtMi41LTEuNTctNC4xNWwtMTEuNTQtMTQuMzZjLTEuNTYtMi4wOC0zLjIz%0D%0ALTIuNi01LjUtMi42djE1LjR6bTU2LjA3IDBjMCAyLjMgMS4wNCAzLjY0IDQuMzcgMy45NWwyLjIu%0D%0AMmMuMyAwIC42LjIyLjYuNjN2Mi4ybC0uMS4ycy03LjktLjItMTEuMTItLjJjLTIuOSAwLTExLjAz%0D%0ALjItMTEuMDMuMmwtLjItLjJ2LTIuMmMwLS40LjMtLjYyLjctLjYybDIuMS0uMmMzLjQzLS4zMiA0%0D%0ALjQ3LTEuOTggNC40Ny0zLjk2VjM0Ljk1YzAtMi4zLTEuMjUtMi45Mi00LjQ4LTMuMjJsLTIuMS0u%0D%0AMjJjLS40IDAtLjctLjA4LS43LS40di0yLjRsLjEtLjJzOC4yLjIgMTEuNDMuMmE3MjYgNzI2IDAg%0D%0AMCAwIDEwLjgyLS4ybC4xLjJWMzFjMCAuMy0uMi41LS42Mi41bC0yLjIuMjJjLTMuMi4zLTQuMzYg%0D%0AMS4xNC00LjM2IDMuMjN2MzQuNjN6bTIyLjQ4LTM0LjQzYzAtMy4yMi0xLjM2LTMuMzMtNi4yNC0z%0D%0ALjY0LS42MiAwLS43Mi0uMy0uNzItLjV2LTIuNGwuMi0uMWMxLjU3IDAgNy43LjIgMTAuNzIuMiAy%0D%0ALjkgMCA3LjA3LS4yIDEwLjkyLS4yIDE0Ljc2IDAgMTcuNDYgNy4yNyAxNy40NiAxMi43IDAgNi4y%0D%0AMy0zIDE2LTE3Ljc3IDE2LTIuNiAwLTQuNjctLjItNi41NS0xLjA0VjcwLjFjMCAyLjI4IDEuMjUg%0D%0AMi44IDQuNTggMy4zMmwyLjA4LjNjLjQzLjEyLjc0LjIyLjc0LjY0djIuMThsLS4xLjJzLTguMzIt%0D%0ALjItMTEuNTQtLjJjLTIuOSAwLTEwLjcuMi0xMC43LjJsLS4xMi0uMnYtMi4xOGMwLS40Mi4yLS41%0D%0AMi42My0uNjNsMi4yLS4zYzMuMi0uNDMgNC4yNS0xLjM2IDQuMjUtMy4zNFYzNS4xNHptOCAxOC4x%0D%0AYzIuMDguODQgNC42OC45NCA2Ljc2Ljk0IDYuMjYgMCA5LjI2LTMuNzYgOS4yNi0xMS43NiAwLTgu%0D%0AOTUtNC4wNS0xMC45Mi05Ljc3LTEwLjkyLTUgMC02LjI1LjkzLTYuMjUgMy42NHYxOC4xem00Mi4y%0D%0ANSAyMy4zYy0zLjEzIDAtMTAuMy4yLTEwLjMuMmwtLjEtLjJ2LTIuM2MwLS4yLjEtLjUuNjItLjVs%0D%0AMi40LS4yMmMzLjIyLS4zIDQuMTYtMi40IDQuMTYtNC40N1YzNC43NGMwLTIuNC0xLjI1LTIuOC00%0D%0ALjE3LTNsLTIuMzgtLjIzYy0uNjMtLjA4LS42My0uMy0uNjMtLjR2LTIuNGwuMS0uMnM4LjEuMiAx%0D%0AMS4yMy4yaDE1LjNjMy4xIDAgMTAuNS0uMiAxMC41LS4ybC4yLjJjLjEgNC40Ny44NCA4LjU0IDEu%0D%0ANTcgMTIuNDhsLTIuNi40MmMtMS4xNC0zLjg1LTMuMS05LjM2LTkuNzctOS4zNmgtOC4zMmMtMS45%0D%0ANyAwLTMgLjczLTMgMi41VjQ5LjhoNy44YzIuOSAwIDMuNjMtMS4yNSA0LjA1LTMuMzNsLjYyLTIu%0D%0AMmMwLS4zLjItLjUyLjYyLS41MmgxLjc2Yy4yIDAgLjIuMS4yLjMtLjIgMi4zLS42IDUuMjItLjYg%0D%0ANy43IDAgMi42LjQgNC44LjYgNy4ybC0uMi4ySDMwOGMtLjUyIDAtLjc0LS4yLS43NC0uNTJsLS41%0D%0AMi0yLjNjLS40LTIuMDctMS4zNS0zLjIyLTQuMDYtMy4yMmgtNy44djE1LjkyYzAgMS45NyAxLjE0%0D%0AIDMuOTUgMy4wMiAzLjk1aDkuODhjNS4zIDAgOC4yMi0zLjMyIDkuNDctOC43M2wyLjYuMy0yLjEg%0D%0AMTEuOTctLjIuMnMtNi4xNC0uMi05LjI2LS4yaC0xOC4yem0zOS4xLTIuODFsMi40LS4yYzMuMTIt%0D%0ALjMyIDQuMTYtMS4yNiA0LjE2LTQuNDhWMzQuNzRjMC0yLjctLjczLTIuNy00LjE2LTNsLTIuMjgt%0D%0ALjIzYy0uNDIgMC0uNzQtLjItLjc0LS41di0yLjNsLjEtLjJzOS4xNi4yIDExLjAzLjJjMS45OCAw%0D%0AIDExLjA0LS4yIDEzLjc0LS4yIDE3LjM3IDAgMjUuOSAxMC44IDI1LjkgMjQuNjQgMCAxOC4yLTEy%0D%0ALjkgMjMuNi0yNC40NCAyMy42LTguMzIgMC0xMS45NS0uMi0xNS4xOC0uMi0zLjEyIDAtMTEuMDMu%0D%0AMi0xMS4wMy4ybC0uMS0uMnYtMi4xOGMtLjAyLS4zLjItLjYyLjYtLjYyem0yMy4yIDBjMTEuNDQg%0D%0AMCAxNy45LTQuMjYgMTcuOS0xOC44MiAwLTEwLjgyLTIuNC0yMy40LTE5Ljg3LTIzLjQtNC4wNiAw%0D%0ALTYuNjYuNjItNi42NiAzLjIydjM0LjMyYzAgMi45LjcyIDQuNjggOC42MyA0LjY4em01MS41LTQu%0D%0AMTZjMCAyLjMgMS4wMyAzLjY0IDQuMzYgMy45NWwyLjIuMmMuMyAwIC42LjIyLjYuNjN2Mi4ybC0u%0D%0AMS4ycy03LjktLjItMTEuMTItLjJjLTIuOSAwLTExLjAyLjItMTEuMDIuMmwtLjItLjJ2LTIuMmMw%0D%0ALS40LjMtLjYyLjctLjYybDIuMS0uMmMzLjQzLS4zMiA0LjQ3LTEuOTggNC40Ny0zLjk2VjM0Ljk1%0D%0AYzAtMi4zLTEuMjYtMi45Mi00LjQ4LTMuMjJsLTIuMS0uMjJjLS40IDAtLjctLjA4LS43LS40di0y%0D%0ALjRsLjEtLjJzOC4yLjIgMTEuNDIuMmE3MjYgNzI2IDAgMCAwIDEwLjgyLS4ybC4xLjJWMzFjMCAu%0D%0AMy0uMi41LS42Mi41bC0yLjIuMjJjLTMuMi4zLTQuMzUgMS4xNC00LjM1IDMuMjN2MzQuNjN6bTMy%0D%0ALjAzIDMuOTVsMy4wMi4yYy40MiAwIC44My4zMy44My44NHYxLjk4bC0uMi4ycy0xMS4zNC0uMi0x%0D%0AMy44NC0uMmMtMi43IDAtOS4zNi4yLTkuMzYuMmwtLjItLjJ2LTEuOThjMC0uNS4zLS44My44Mi0u%0D%0AODMgNC41OC0uMyA3LjE3LTEuMTQgMTAuMS03LjhsMjMuMDctNTQuMDhjMS4xNC0yLjcgMS45OC0z%0D%0ALjc1IDMuNTQtMy43NSAxLjQ2IDAgMiAxLjA1IDIuOCAzLjEzbDIxLjMzIDU2LjM3YzEuNDYgNC4w%0D%0ANiAzLjU0IDUuNjIgNy43IDYuMDNsMS4xNS4xYy41MiAwIDEuMDQuMyAxLjA0Ljg0djEuOTdsLS4z%0D%0ALjJzLTguMDItLjItMTIuMDgtLjJjLTMuNjQgMC0xMy44My4yLTEzLjgzLjJsLS4xLS4ydi0xLjk3%0D%0AYzAtLjUzLjItLjg0Ljc0LS44NGwyLjktLjJjMy45Ni0uMyA1LjQzLTEuNTcgNC4zOC00LjQ4bC02%0D%0ALjM0LTE3LjU4aC0yMS42M2MtMi41IDAtMy4xMi40Mi0zLjY0IDEuNzdsLTYuMDMgMTUuMDhjLTEu%0D%0AMDQgMi42LjMyIDQuOSA0LjE2IDUuMnpNNDYxLjQgNDcuMWwtMTAuMDctMjcuNzZoLS4ybC0xMC40%0D%0AIDI2LjQyYy0uNDMgMS4wNC4zIDEuMzUgMi41OCAxLjM1aDE4LjF6Ii8+Cjwvc3ZnPgo="  alt="Wikipedia"> 
         </div>
-        <strong class="jsl10n localized-slogan" data-jsl10n="slogan">La enciclopedia libre</strong>
+        <div class="header_logo">
+           <h2 class="slogan">La enciclopedia libre</h2> 
         </div>
-    </h1>
+    <section class="container">
+        <div class="content">
+                <div class="container_img">
+                    <img src="https://raw.githubusercontent.com/wikimedia/portals/master/dev/wikipedia.org/assets/img/Wikipedia-logo-v2.png" alt="">
+                </div>
+            <div class="content_idiomas">
+                     <button class="button_es" lang="es" >Español <br> 
+                        <a target="_blank" href="https://es.wikipedia.org/wiki/Wikipedia:Portada">1 571 000+ artículos</a>
+                     </button>
+                     <button class="button_en " lang="en">English<br>
+                        <a target="_blank" href="https://en.wikipedia.org/wiki/Main_Page">5 994 000+ articles</a>
+                     </button>
+                     <button class="button_ja" lang="ja">日本語 <br>
+                        <a target="_blank" href="https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8">1 185 000+ 記事</a>
+                     </button>
+                     <button class="button_de" lang="de">Deutsh <br>
+                        <a target="_blank" href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite">2 385 000+ Artikel</a>
+                     </button>
+                     <button class="button_ru" lang="ru">Pусский <br>
+                        <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0"> 1 590 000+ статей</a>
+                     </button>
+                     <button class="button_fr" lang="fr">Français <br>
+                        <a target="_blank" href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal"> 2 171 000+ articles</a>
+                     </button>
+                     <button class="button_it" lang="it">Italiano <br>
+                        <a target="_blank" href="https://it.wikipedia.org/wiki/Pagina_principale"> 1 576 000+ voci</a>
+                     </button>
+                     <button class="button_zh" lang="zh">中文 <br>
+                        <a target="_blank" href="https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5"> 1 090 000+ 條目</a>
+                     </button>
+                     <button class="button_pt" lang="pt">Português <br>
+                        <a target="_blank" href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal"> 1 018 000+ artigos</a>
+                     </button>
+                     <button class="button_pl" lang="pl">Polski <br>
+                        <a target="_blank" href="https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna"> 1 379 000+ haseł</a>
+                     </button>   
+            </div>
+        </section>
+    </header>
 
+    <main>
+      <section class="main-input">
+          <div class="main-input-container">
+             <input type="text">
+              <select>
+               <span class="lang-icon">ES
+               </span>
+               <a class="desp-icon" href=""></a>
+              </select>
+              <a class="search-icon" href=""></a>
+              
+          </div>
+      </section>
+      <section class="main-buttons">
+          <div>
+              <button> <a src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDov%0D%0AL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMyIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAw%0D%0AIDIzIDE2Ij4KCTx0aXRsZT4KCQlUcmFuc2xhdGUgaWNvbgoJPC90aXRsZT4KCTxwYXRoIGZpbGw9%0D%0AIiMzNmQiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE5IDEyLjRsMS4zIDMuNmgxLjhMMTcuOSAz%0D%0AaC0yLjVMMTEgMTZoMS44bDEuMi0zLjZoNXptLTIuNS03LjlsMi4xIDYuMmgtNC4ybDIuMS02LjJ6%0D%0ATTcuMSAySDhMNyAwSDVsLjUgMWMuMy42LjkgMSAxLjYgMXptMy44IDIuNWgybC41LTEuNUgxdjEu%0D%0ANWgxLjljLjYgMS44IDEuNSAzLjMgMi44IDQuNy0xLjQgMS4xLTMuMSAxLjctNC44IDIuM2wuNSAx%0D%0ALjVjMi0uNiAzLjgtMS40IDUuNS0yLjcuOS43IDIuMSAxLjQgMy41IDEuOGwuNS0xLjVjLTEuMS0u%0D%0AMy0yLS44LTIuOC0xLjQgMS45LTEuOSAyLjUtMy44IDIuNi00bC4yLS43em0tNCAzLjdjLTEtMS0x%0D%0ALjktMi4zLTIuMy0zLjdoNC43Yy0uNSAxLjQtMS40IDIuNi0yLjQgMy43LTEuNi0xLjcgMCAwIDAg%0D%0AMHoiLz4KPC9zdmc+Cg==" href=""></a>
+                        Leer wikipedia en tu idioma
+               </button>
+          </div>
+          
+      </section>
+  </main>
+    <main>
 
+    </main>
+        
+   <footer>
+
+   </footer>
    </body>
 <html>
 
